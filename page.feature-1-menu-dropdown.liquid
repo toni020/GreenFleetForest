@@ -1,0 +1,14 @@
+{{ "forestMap.css" | asset_url | stylesheet_tag }}
+{{ "forestGoogleMap.js" | asset_url | script_tag }}
+
+<div>
+  <p style="text-align: center;">Select the 3-bar icon to view more features (Mobile)</p>
+  <h1 class="feature-1-dropdown-menu-title" style="text-align: center;">Feature 1 - Dropdown Menu</h1>  
+  <div class="map-container">
+    <div id="map"></div>
+  </div>
+
+<script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvbBZMdQ710YM1aSpZf8GGAQpBEnhMOi8&callback=initMap"
+    defer
+></script>
